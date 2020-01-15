@@ -35,6 +35,49 @@ $mystring.GetType()
 "testing".ToUpper()
 "testing".Contains("ting")
 
+# Comparisions
+$myint13 = 13
+
+$myint13 -gt 34 # False
+$myint13 -lt 34 # True
+$myint13 -eq 34 # False
+
+# Operations 
+$myresult = 4 * 2 # 8
+$myresult
+
+$myresult++ # Increments 
+$myresult
+
+# Implicit cast
+12 -eq "012" # True, because the string is converted to int
+"012" -eq 12 # False, because int is converted to a string
+
+# Long version of $myvar = 15
+New-Variable -Name myvar -Value 15
+
+Get-Variable myvar
+
+Get-Variable # It shows all variables
+
+# Assign a new value in the long form
+# $myvar = 123
+Set-Variable -nAME myvar -Value 123
+$myVar
+
+# Clear the contents of a variable
+# same as $myvar = $null
+Clear-Variable -Name myvar
+$myVar
+
+# Removing the variable
+Remove-Variable -Name myvar
+Get-Variable myvar # Produces an error
+ 
+
+
+
+
 
 
 
