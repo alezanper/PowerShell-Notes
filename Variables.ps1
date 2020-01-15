@@ -28,4 +28,16 @@ $mynewint.GetType()
 [string] $mystring = "testing"
 $mystring.GetType()
 
+# Other variable types could be short, float, decimal, single, bool, byte.
+
+# Custom functions
+"testing".GetType()
+"testing".ToUpper()
+"testing".Contains("ting")
+
+
+
+
+
+
 
