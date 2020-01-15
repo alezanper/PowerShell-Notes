@@ -35,7 +35,27 @@ $loc = Get-Location
 
 # Powershell shortcut
 "There are {0} items." -f $items
-
 "There are {0} items in the location {1}." -f $items, $loc
-
 "The 15% tip of a 33.33 dollar bill is {0} dollars." -f (33.33 * 0.15)
+
+# Wildcards
+Clear-Host
+"Hello World" -like "Hello*" # True
+"Hello World" -like "Nothing*" # False
+"Hello World" -like "?ello World" # True
+"Hello World" -like "Hello*[d]" # True
+"Hello World" -like "Hello*[p]" # False
+
+# Regular Expressions
+Clear-Host
+"correo@dominio.com" -match "^[a-z]+@[a-z]+.[a-z]+" # True
+"123@dominio.com" -match "^[a-z]+@[a-z]+.[a-z]+" # False
+
+
+
+
+
+
+
+
+
